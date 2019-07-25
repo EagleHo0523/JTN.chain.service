@@ -274,8 +274,8 @@ func processGetTxFee(params interface{}) (interface{}, error) {
 		return respTxFee, err
 	}
 
-	normal := util.CalcGasCost(uint64(30000), gasprice)
-	high := util.CalcGasCost(uint64(60000), gasprice)
+	normal := util.CalcGasCost(uint64(21000), gasprice)
+	high := normal.Mul(normal, big.NewInt(int64(3)))
 
 	respTxFee.Normal = util.ToDecimal(normal, 18).String()
 	respTxFee.High = util.ToDecimal(high, 18).String()
