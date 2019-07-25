@@ -1,0 +1,111 @@
+{
+	"variables": [],
+	"info": {
+		"name": "ChainServiceApi",
+		"_postman_id": "a447ed85-fd8d-5764-154c-ed8f07d92b15",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "DDMX_GetBalance",
+			"request": {
+				"url": "http://localhost:8080/DDMX",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"METHOD\":\"GetBalance\",\n\t\"PARAMS\":[{\"ACCOUNT\":\"0x98f3937ec83c0659f396dc82ff221737ea11718d\",\"CONTRACT\":\"\"}]\n}"
+				},
+				"description": "\"PARAMS\":[{ACCOUNT,CONTRACT}]\n\n\"ACCOUNT\" 不可為空, 查詢餘額的帳號\n\n\"CONTRACT\" 為空字串時, 表示查詢DDMX; 非空字串時, 表示查詢該合約代表的token餘額(目前不提供)"
+			},
+			"response": []
+		},
+		{
+			"name": "DDMX_NewAccount",
+			"request": {
+				"url": "http://localhost:8080/DDMX",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"METHOD\":\"NewAccount\",\n\t\"PARAMS\":[]\n}"
+				},
+				"description": "\"PARAMS\":[] 為空值時, 則使用預設密碼創建帳號\n\n\"PARAMS\":[\"\"] 為空字串時, 則使用預設密碼創建帳號\n\n\"PARAMS\":[\"password\"] 為非空字串時, 使用給予的字串創建帳號, 需自行保管密碼供後續使用"
+			},
+			"response": []
+		},
+		{
+			"name": "DDMX_GetTxFee",
+			"request": {
+				"url": "http://localhost:8080/DDMX",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"METHOD\":\"GetTxFee\",\n\t\"PARAMS\":[]\n}"
+				},
+				"description": "\"PARAMS\":無"
+			},
+			"response": []
+		},
+		{
+			"name": "DDMX_GetBlockNumber",
+			"request": {
+				"url": "http://localhost:8080/DDMX",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"METHOD\":\"GetBlockNumber\",\n\t\"PARAMS\":[]\n}"
+				},
+				"description": "\"PARAMS\":無"
+			},
+			"response": []
+		},
+		{
+			"name": "DDMX_SendTransaction",
+			"request": {
+				"url": "http://localhost:8080/DDMX",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"METHOD\":\"SendTransaction\",\n\t\"PARAMS\":[{\"FROM\":\"0x98f3937ec83c0659f396dc82ff221737ea11718d\",\"TO\":\"0xcb784ab185ade0347c5e99854089868111615727\",\"AMOUNT\":\"0.00123\",\"PASSWORD\":\"12qwaszx\",\"CONTRACT\":\"\"}]\n}"
+				},
+				"description": "\"PARAMS\":[{FROM,TO,AMOUNT,PASSWORD,CONTRACT,SPEED}]\n\n\"FROM\" 不可為空, 轉出的帳號\n\n\"TO\" 不可為空, 轉入的帳號\n\n\"AMOUNT\" 不可為空, 不可為負值, 轉出的金額\n\n\"PASSWORD\" 解鎖密碼, 為空字串時, 使用預設創建密碼, 非空字串時, 使用所給予的密碼\n\n\"CONTRACT\" 為空字串時, 表示轉出ETH; 非空字串時, 表示轉出該合約代表的token(暫不提供)"
+			},
+			"response": []
+		}
+	]
+}

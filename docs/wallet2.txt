@@ -1,0 +1,15 @@
+mnemonic:  soft camera piano satoshi pond wreck young absurd upper various december pride
+RootPrivateKey:  tprv8ZgxMBicQKsPdQUaz12ZLa1xmN47uRBPp14w5XMFFeHSsxkv5SBFSi21gwKhBU3aqkBaoGwWKbFYjMfqAZGLuE5BDEkcUGwy534Ja5dn6Q9
+RootPublicKey:  tpubD6NzVbkrYhZ4WsWNseh9jyg5LPa44kNJPJfiN3PYfv5qiT1ghpzqdCdss5fRg5V9Bq6ceKFwiVDGDz22fDVY3X85CyMMXitSeta8dGorLZr
+===================================================================================================================
+BTC private key:  cS1LhvVcXzMxSYjPznmCMKB57C6ooK2u4Xf8zLaUPJWQQCYn7Ags
+BTC public key:  0330fb0c3832c199077646e268ec51018139b7828bc10f81b3b32a63e7f9da6ce2
+BTC account:  n3hZ8T2m6rFzEQsw9gRjcq1DggW5JV4dQd
+===================================================================================================================
+ETH private key:  c2d66c5a185013e62826036a9579b665b44b39c924772a2e85d5ad39c0721cfe
+ETH public key:  0415216f9a6111995d9bd7db0d9ffca5fdad734595d74f0073392570018be21d32aa1de68337f44c62772ff7ecfc713ccba443314b23dc44206fe758404e97d107
+ETH account:  0xc6e5350368f8B038caEC8C005EC107680a1b639a
+===================================================================================================================
+USDT private key:  cS1LhvVcXzMxSYjPznmCMKB57C6ooK2u4Xf8zLaUPJWQQCYn7Ags
+USDT public key:  0330fb0c3832c199077646e268ec51018139b7828bc10f81b3b32a63e7f9da6ce2
+USDT account:  n3hZ8T2m6rFzEQsw9gRjcq1DggW5JV4dQd
