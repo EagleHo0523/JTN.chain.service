@@ -74,6 +74,7 @@ func FailOnError(err error, msg string) {
 func GetSystemParameters(method string) (interface{}, error) {
 	var rtn interface{}
 
+	// jsonFile, err := os.Open("/home/ubuntu/chain_service_go/env.json")
 	jsonFile, err := os.Open("./env.json")
 	if err != nil {
 		return rtn, err

@@ -8,8 +8,8 @@ import (
 	mqtt "github.com/eclipse/paho.mqtt.golang"
 )
 
-func CreateConnect(mqSetting util.MqttSetting) (mqtt.Client, error) {
-	var client mqtt.Client
+func CreateConnect(mqSetting util.MqttSetting) mqtt.Client {
+	// var client mqtt.Client
 	opts := mqtt.NewClientOptions()
 
 	if mqSetting.Env == "main" {
@@ -29,21 +29,20 @@ func CreateConnect(mqSetting util.MqttSetting) (mqtt.Client, error) {
 	})
 
 	// connect to broker
-	client = mqtt.NewClient(opts)
-
-	return client, nil
-}
-
-func Send(client mqtt.Client, topic string, data interface{}) {
+	client := mqtt.NewClient(opts)
 	token := client.Connect()
 	if token.Wait() && token.Error() != nil {
 		util.FailOnError(token.Error(), "Fail to connect broker,")
 	}
 
+	return client
+}
+
+func Send(client mqtt.Client, topic string, data interface{}) {
 	body := data.([]byte)
 
 	// publish to topic
-	token = client.Publish(topic, byte(2), false, body) // QoS 2 較占用頻寬, 但保證送達, 且只送一次
+	token := client.Publish(topic, byte(2), false, body) // QoS 2 較占用頻寬, 但保證送達, 且只送一次
 	if token.Wait() && token.Error() != nil {
 		util.FailOnError(token.Error(), "Fail to publish,")
 	}

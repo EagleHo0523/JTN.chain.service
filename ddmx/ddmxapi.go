@@ -172,11 +172,7 @@ func ProcessTxBack() {
 			return
 		}
 		mqSetting = m.(util.MqttSetting)
-		mqttConnect, err = mqtt.CreateConnect(mqSetting)
-		if err != nil {
-			util.FailOnError(err, "create mqtt connection fail.")
-			return
-		}
+		mqttConnect = mqtt.CreateConnect(mqSetting)
 
 		num, err := Rpc_blockNumber()
 		if err != nil {
@@ -184,6 +180,11 @@ func ProcessTxBack() {
 		}
 		maxBlockNum = num
 		nowBlockNum = num
+
+		for !mqttConnect.IsConnected() {
+			time.Sleep(1 * time.Second)
+			mqttConnect = mqtt.CreateConnect(mqSetting)
+		}
 
 		fmt.Println("Start to sync DDMX chain transaction...")
 		go getBlockNum()
@@ -547,7 +548,7 @@ func getBlockNum() {
 	}
 }
 func sendListenTx(arrs []util.ListenTxReturn) {
-	if mqttConnect.IsConnectionOpen() {
+	if mqttConnect.IsConnected() {
 		c := len(arrs)
 		for i := 0; i < c; i++ {
 			topic := "blockchain/ddmx/listentx/" + arrs[i].HostName
@@ -563,7 +564,7 @@ func sendListenTx(arrs []util.ListenTxReturn) {
 	}
 }
 func snedListenBlockNum(num int64) {
-	if mqttConnect.IsConnectionOpen() {
+	if mqttConnect.IsConnected() {
 		topic := "blockchain/ddmx/listenblocknumber"
 
 		var blockNum responseBlockNumber
