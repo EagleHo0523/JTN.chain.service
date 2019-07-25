@@ -1,0 +1,15 @@
+mnemonic:  wide keep address spend hundred fish million cactus rely thought slice powder
+RootPrivateKey:  tprv8ZgxMBicQKsPfHUBsayPTwDgSqgSQdaskEqyCU5ci47MtjPCqCWCg7W4ckgkzz18oguDXR8znWPx6oGYEn4nt7VTCviHX7bBYE6CfPmTEdR
+RootPublicKey:  tpubD6NzVbkrYhZ4YkVymEdysLso1sCNZxmnKYSkUz7v8KukjDdyTbKnrc7vnrReYNAzZtVHdx1NUjSpDmkwKNnfooAKnA4EqJYrCwrTkdguMRS
+===================================================================================================================
+BTC private key:  cSTJTECAhixmdZ5egDKRsPgx5eaYj81KkeEHmEroyJWBdqrK7z7B
+BTC public key:  037c555fb40fbe9c0ed7625dd6d962a1118f313be1e2a8664b75898e9c350c257c
+BTC account:  mktCJ8vZk5atQP7p5mcdx5rboawf2DKdPt
+===================================================================================================================
+ETH private key:  5ceec8d7f5e0cbbb082431408cdbe131068b9bedc87253fd5d30db1424b6b47a
+ETH public key:  047a251a43d724819147c2bfeabb0e04dc6e37d4f30a36ded23c7d91254e50dfdacc62f9060ba5107c6f81d1a14b9c7bcc49f8fb64c6f8ebfb6b7544db4ff2bc96
+ETH account:  0x1F6998A6153378aeC050Ca02ec37B2cFC6ddDbF7
+===================================================================================================================
+USDT private key:  cSTJTECAhixmdZ5egDKRsPgx5eaYj81KkeEHmEroyJWBdqrK7z7B
+USDT public key:  037c555fb40fbe9c0ed7625dd6d962a1118f313be1e2a8664b75898e9c350c257c
+USDT account:  mktCJ8vZk5atQP7p5mcdx5rboawf2DKdPt

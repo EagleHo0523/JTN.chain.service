@@ -1,0 +1,18 @@
+mnemonic:  rule hybrid whip stage gentle bitter domain certain today fresh uniform abstract
+RootPrivateKey:  tprv8ZgxMBicQKsPd66tBZJcYpMbmegtT1iJK4dBJZCCDyfvpJCEKPPMsAvRcrqTSah9crNJBpPeDNvEEuTSFvFtjqcMurUyKVpKwDmCkLNgAqS
+RootPublicKey:  tpubD6NzVbkrYhZ4WZ8g5CyCxE1iLgCpcLuCtNDxb5EVeFUKenSzwnCx3fYHo2HiLKpKRWCjLjW2JD8RQfjY1JMDkQDhccicUM2LrYkCxxT9BXR
+===================================================================================================================
+BTC private key:  cUXBK1i2MppfeYWPAQhpPCg2uxt5gnG82uNsNhyGerHniQRoNVG5
+BTC public key:  032cd19fd99fb5fc266b3d9f2db64e09837b6e896e26365ffbc34a71374206bfdc
+BTC account:  myVfUahqRxRsNeyRXXGCBZtzjo7oqyJKJz
+===================================================================================================================
+ETH private key:  1f2317482fff7ec9b4137479289babe80dd0162a3fea3494cfe6951fcc6cfbd5
+ETH public key:  046c75524035e4e4c4d232965e86ccb5daa060ecff0c450aa61223a31ee804daf5c368cdcf1c0774d9e2a991d047f6d760583365ef1a895531a41d8158c41765ca
+ETH account:  0xa83c7f79f5BF4C0Cc883E44ca9c0987BdD94B7a1
+===================================================================================================================
+USDT private key:  cUXBK1i2MppfeYWPAQhpPCg2uxt5gnG82uNsNhyGerHniQRoNVG5
+USDT public key:  032cd19fd99fb5fc266b3d9f2db64e09837b6e896e26365ffbc34a71374206bfdc
+USDT account:  myVfUahqRxRsNeyRXXGCBZtzjo7oqyJKJz
+
+private key : cQARisBpLnE1Yb8hWzrgFBfaG6FAWPcLRpz8nKEaiQhWqt4nuXsY
+USDT account: mvjgE6GpL6tkzsxpy364PwfYyNtx4t7XKc
